@@ -1,0 +1,2 @@
+class FacoltaController < ApplicationController
+end

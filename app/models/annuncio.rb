@@ -1,0 +1,2 @@
+class Annuncio < ApplicationRecord
+end

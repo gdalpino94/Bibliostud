@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  durata: 1
+  ID: 1
+  descrizione: MyText
+  prezzo: 1.5
+  visibilita: 1
+
+two:
+  durata: 1
+  ID: 1
+  descrizione: MyText
+  prezzo: 1.5
+  visibilita: 1
