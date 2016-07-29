@@ -3,7 +3,7 @@ class CreateLibros < ActiveRecord::Migration[5.0]
     create_table :libros do |t|
       t.string :titolo
       t.string :autore
-      t.string :ISBN
+      t.string :ISBN 
 
       t.timestamps
     end

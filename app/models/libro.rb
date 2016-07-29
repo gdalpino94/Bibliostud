@@ -1,3 +1,3 @@
 class Libro < ApplicationRecord
-	set_primary_key :ISBN
+	self.primary_key= :ISBN
 end
