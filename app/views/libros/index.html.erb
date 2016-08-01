@@ -1,1 +1,7 @@
-<h1>Ciaone</h1>
+<h1>Index libro</h1>
+
+<% @libros.each do |libro| %>
+		<h2><%= link_to libro.titolo+' ('+libro.autore+') '+libro.ISBN , libro_path(libro) %></h2>
+<% end %>
+
+<%= link_to "Aggiungi Libro", new_libro_path %>

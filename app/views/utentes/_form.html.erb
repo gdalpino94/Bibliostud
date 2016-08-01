@@ -1,0 +1,9 @@
+<%= simple_form_for @utente do |f| %>
+	<%= f.input :username, label: "Username" %>
+	<%= f.input :nome, label: "Nome" %>
+	<%= f.input :cognome, label: "Cognome" %>
+	<%= f.input :email, label: "Email" %>
+	<%= f.input :telefono, label: "Telefono" %>
+	<%= f.input :password, label: "Password" %>
+	<%= f.button :submit %>
+<% end %>

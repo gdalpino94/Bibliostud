@@ -1,3 +1,3 @@
 class Utente < ApplicationRecord
-	set_primary_key :username
+	self.primary_key= :username
 end
