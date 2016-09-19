@@ -1,0 +1,6 @@
+<h2><%= @libro.titolo %></h2>
+<h2><%= @libro.autore %></h2>
+<h2><%= @libro.ISBN %></h2>
+<%= link_to "Edit", edit_libro_path(@libro) %>
+<%-# ATTENZIONE: Nella linea qui sotto non mettere link_to al posto di button_to altrimenti non funziona! -%>
+<%= button_to "Delete", libro_path(@libro), method: :delete, data: { confirm: "Eliminare il libro?" } %>
