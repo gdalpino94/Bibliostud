@@ -1,0 +1,4 @@
+<h2><%= @utente.username %></h2>
+<h2><%= session[:user_id] %></h2>
+<h2><%= @utente.nome %></h2>
+<%= button_to "Delete", utente_path(@utente), method: :delete, data: { confirm: "Eliminare utente?" } %>
