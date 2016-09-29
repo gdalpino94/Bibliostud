@@ -18,6 +18,11 @@ class UtentesController < ApplicationController
     	end
 	end
 
+	def show
+		@utente = Utente.find(params[:id])
+    	@annuncios = @utente.annuncios.paginate(page: params[:page])
+	end
+
 	def destroy
 		@utente.destroy
 		redirect_to utentes_path

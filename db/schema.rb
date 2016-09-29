@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160803091856) do
+ActiveRecord::Schema.define(version: 20160920132459) do
 
   create_table "annuncios", force: :cascade do |t|
     t.integer  "durata"
@@ -19,6 +19,8 @@ ActiveRecord::Schema.define(version: 20160803091856) do
     t.integer  "visibilita"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.string   "utente_id"
+    t.index ["utente_id"], name: "index_annuncios_on_utente_id"
   end
 
   create_table "facolta", force: :cascade do |t|
